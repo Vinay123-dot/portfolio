@@ -7,13 +7,13 @@ import { Mail, Phone, Linkedin, FileDown } from "lucide-react";
 export default function App() {
   return (
     <div className="bg-gradient-to-br from-white via-gray-100 to-gray-200 text-black font-sans scroll-smooth">
-      <header className="flex justify-between items-center px-8 py-5 bg-white bg-opacity-80 shadow-xl sticky top-0 z-50 backdrop-blur-md">
-        <h1 className="text-3xl font-bold tracking-wider text-orange-500">Velugoti Vinay</h1>
-        <nav className="space-x-6 flex items-center">
+      <header className="flex flex-col space-y-6 md:space-y-0 md:flex-row md:justify-between md:items-center px-8 py-5 bg-white bg-opacity-80 shadow-xl sticky top-0 z-50 backdrop-blur-md">
+        <h1 className="text-lg md:text-3xl font-bold tracking-wider text-orange-500">Velugoti Vinay</h1>
+        <nav className="flex flex-col space-y-4 md:space-y-0 md:space-x-6  md:flex-row md:items-center">
           {["About", "Skills", "Experience", "Projects"].map((item) => (
             <a key={item} href={`#${item.toLowerCase()}`} className="relative group text-gray-800 font-semibold hover:text-orange-500 transition-colors duration-300">
               {item}
-              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-24 md:group-hover:w-full"></span>
             </a>
           ))}
         </nav>
