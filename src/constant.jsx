@@ -1,4 +1,4 @@
-export const my_skills = ["HTML", "CSS", "JavaScript", "React", "React Native", "Node", "Express", "TailwindCSS", "Git", "Redux"];
+export const my_skills = ["HTML", "CSS", "JavaScript", "React", "React Native", "Node.js basics", "Express.js basics", "TailwindCSS", "Git", "Redux"];
 
 export const my_experiences = [
   {
