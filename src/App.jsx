@@ -6,8 +6,8 @@ import { Mail, Phone, Linkedin, FileDown } from "lucide-react";
 
 export default function App() {
   return (
-    <div className="bg-gradient-to-br from-white via-gray-100 to-gray-200 text-black font-sans scroll-smooth">
-      <header className="flex flex-col space-y-6 md:space-y-0 md:flex-row md:justify-between md:items-center px-8 py-5 bg-white bg-opacity-80 shadow-xl sticky top-0 z-50 backdrop-blur-md">
+    <div className="relative bg-gradient-to-br from-white via-gray-100 to-gray-200 text-black font-sans scroll-smooth overflow-x-hidden">
+      <header className="flex flex-col space-y-6 md:space-y-0 md:flex-row md:justify-between md:items-center px-8 py-5 bg-white bg-opacity-80 shadow-xl sticky top-0 z-50 backdrop-blur-md w-full">
         <h1 className="text-lg md:text-3xl font-bold tracking-wider text-orange-500">Velugoti Vinay</h1>
         <nav className="flex flex-col space-y-4 md:space-y-0 md:space-x-6  md:flex-row md:items-center">
           {["About", "Skills", "Experience", "Projects"].map((item) => (
@@ -21,14 +21,12 @@ export default function App() {
 
       <section id="about" className="px-10 py-20">
         <div className="flex flex-col md:flex-row gap-10 items-center justify-between">
-          {/* Image comes first on small screens, second on md+ */}
           <motion.div initial={{ x: 60, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }} className="flex-1 flex justify-center order-1 md:order-2">
             <img src={profileImage} alt="Vinay" className="rounded-lg shadow-xl w-92 h-92 object-cover border-4 border-orange-400" />
           </motion.div>
 
-          {/* Text comes after image on mobile, before on md+ */}
           <motion.div initial={{ x: -60, opacity: 0 }} whileInView={{ x: 0, opacity: 1 }} transition={{ duration: 0.6 }} className="flex-1 order-2 md:order-1">
-            <p className="text-lg font-semibold text-orange-500 mb-2">Frontend Developer</p>
+            <p className="text-lg font-semibold text-orange-500 mb-2">Software Engineer</p>
 
             <h2 className="text-5xl font-extrabold text-gray-900 mb-4 leading-tight">Hi, I'm Vinay</h2>
 
@@ -55,7 +53,11 @@ export default function App() {
                 <span className="text-sm font-medium">LinkedIn</span>
               </a>
 
-              <a href="/vinay_resume.pdf" download className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-md shadow-3xl hover:bg-orange-600 transition">
+              <a
+                href="/Vinay_Velugoti_React_Developer_Resume.pdf"
+                download
+                className="flex items-center gap-2 bg-orange-500 text-white px-4 py-2 rounded-md shadow-3xl hover:bg-orange-600 transition"
+              >
                 <FileDown className="w-5 h-5" />
                 <span className="text-sm font-medium">Resume</span>
               </a>
@@ -122,10 +124,7 @@ export default function App() {
               transition={{ delay: idx * 0.1 }}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-orange-300 transition"
             >
-              <h3 className="text-xl font-bold text-gray-900">
-                {project.title}
-                {/* <span className="text-gray-500">({project.duration})</span> */}
-              </h3>
+              <h3 className="text-xl font-bold text-gray-900">{project.title}</h3>
               <p className="text-orange-500 text-lg font-semibold mt-2">{project.role}</p>
               <ul className="list-disc list-inside text-gray-700 font-semibold mt-4 space-y-1">
                 {project.points.map((point, i) => (

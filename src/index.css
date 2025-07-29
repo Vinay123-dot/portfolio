@@ -1,4 +1,13 @@
 @import "tailwindcss";
+
+/* index.css or App.css */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 .table-container {
   max-height: 300px; /* Set fixed height */
   overflow-y: auto; /* Enable vertical scrolling */

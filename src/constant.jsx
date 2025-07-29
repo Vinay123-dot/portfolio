@@ -1,29 +1,30 @@
-export const my_skills = ["HTML", "CSS", "JavaScript", "React", "React Native", "Node.js basics", "Express.js basics", "TailwindCSS", "Git", "Redux"];
+export const my_skills = ["React", "Redux Toolkit", "JavaScript", "TypeScript", "TailwindCSS", "HTML", "CSS", "React Native", "Node.js basics", "Express.js basics", "Git"];
 
 export const my_experiences = [
   {
     company: "Swinkpay fintech private limited",
     duration: "Mar-2024 to Present",
-    role: "Frontend Developer",
+    role: "Software Engineer",
     points: [
-      "Provide technical assistance to internal departments and developers.",
-      "Written clean, maintainable, and efficient code following best practices and industry standards.",
-      "Migrated a large-scale project from Angular to React in 3 months, reducing page load time by 30% and enhancing scalability. ",
-      "Redesigned a payment plugin, leading to a 25% improvement in user adoption rates.",
-      "Developed a Cashbook application, streamlining business workflows and achieving 20% higher efficiency in operations.",
-      "Embedded external web pages seamlessly within the application using iframes to integrate third-party content and enhance functionality.",
+      `Migrated a legacy system from Angular to React within 3 months, improving maintainability and reducing bug count by 40%.`,
+      "Designed and implemented a scalable financial tracking app, streamlining business workflows and improving team efficiency.",
+      "Redesigned the core payment interface, leading to improved UI/UX and a 25% reduction in payment failures.",
+      "Integrated face liveness detection using AWS Amplify to strengthen onboarding security. ",
+      "Used Formik and Yup for advanced form validation; adhered to accessibility and performance best practices.",
+      "Contributed to 4+ cross-functional projects, delivering scalable front-end architecture using React, Redux Toolkit, and Tailwind CSS.",
     ],
   },
   {
     company: "Binimise labs private limited",
     duration: "April-2021 to Feb-2024",
-    role: "Frontend Developer",
+    role: "Junior Software Engineer",
     points: [
-      "Optimized React.js dashboard performance, increasing responsiveness by 40%.",
-      "Implemented advanced state management with Redux, reducing API calls by 20% and improving application scalability.",
-      "Hands-on experience in web and mobile app development (HTML, JavaScript, CSS, React, Redux and React Native).",
-      "Developed a cross-platform mobile app with real-time notifications, achieving a 95% crash-free user experience.",
-      "Integrated third-party services like Firebase and OneSignal API to enable real-time notifications and enhance user engagement.",
+      "Progressed from trainee to key frontend developer, working on a single enterprise-scale web and mobile app. ",
+      "Worked with senior developers to implement and enhance features across web and React Native apps; partnered with QA teams to resolve bugs and UI inconsistencies, ensuring stable product rollouts. ",
+      "Built reusable components using React.js, Tailwind CSS, Material UI, and Ant Design, ensuring cross device consistency. ",
+      "Integrated REST APIs using Axios for real-time dashboards, dynamic forms, and file uploads.",
+      "Optimized component rendering and state management using Redux Toolkit and Context API, reducing redundant API calls by 20%. ",
+      "Participated in code reviews and used Git for version control, following collaborative development workflows.",
     ],
   },
 ];
@@ -32,7 +33,7 @@ export const my_projects = [
   {
     title: "Merchant Management System",
     // duration: "Jan-2024 to Mar-2024",
-    role: "Frontend Developer",
+    role: "Software Engineer",
     points: [
       "Migrated a large-scale project from Angular to React within 3 months, improving performance and maintainability.",
       "Implemented a three-level login system: Onboarder, Verifier, and Supervisor, each with role-specific access.",
@@ -43,7 +44,7 @@ export const my_projects = [
   {
     title: "Web Plugin",
     // duration: "Oct-2023 to Dec-2023",
-    role: "Frontend Developer",
+    role: "Software Engineer",
     points: [
       "Re-designed a transaction tool with a modern UI and improved UX for better user engagement.",
       "Enabled creation of customizable payment links, supporting various configurations for business needs.",
@@ -54,7 +55,7 @@ export const my_projects = [
   {
     title: "Merchant Information System",
     // duration: "Jul-2023 to Sep-2023",
-    role: "Frontend Developer",
+    role: "Software Engineer",
     points: [
       "Developed QuickBilling module to manage and add store inventory efficiently.",
       "Built an Attendance module with full CRUD operations, role-based views (employee/supervisor), and report downloads.",
@@ -64,7 +65,7 @@ export const my_projects = [
   {
     title: "Waste Management And Recycling",
     // duration: "May-2023 to Jun-2023",
-    role: "Frontend Developer",
+    role: "Junior Software Engineer",
     points: [
       "Built an interactive dashboard displaying complaints, tasks, residents, and vehicle data using charts.",
       "Integrated real-time vehicle tracking and history using Firebase onSnapshot listener and react-google-maps.",
@@ -77,7 +78,7 @@ export const my_projects = [
   {
     title: "Expenses Tracker",
     // duration: "Feb-2023 to Apr-2023",
-    role: "Frontend Developer",
+    role: "Software Engineer",
     points: [
       "Developed an Expense Tracker app to record daily transactions using React.js, Node.js, Express.js, MongoDB, and JavaScript.",
       "Implemented user-based authentication and access control for secure usage.",
@@ -90,7 +91,7 @@ export const my_projects = [
   {
     title: "Citizen App",
     // duration: "Feb-2023 to Apr-2023",
-    role: "Frontend Developer",
+    role: "Software Engineer",
     points: [
       "Designed and developed Citizen App, a mobile application to improve public engagement with civic services.",
       "Integrated key features like complaints, bookings, notifications, history, and vehicle tracking.",
